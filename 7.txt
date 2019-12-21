@@ -1,0 +1,68 @@
+CREATE DATABASE toko
+
+USE toko
+
+CREATE TABLE tbl_customers (
+	id int PRIMARY KEY AUTO_INCREMENT,
+	first_nama varchar(20),
+	last_nama varchar(20),
+	email varchar(50),
+    	address text,
+	city varchar(30),
+	state varchar(30),
+	zip_code int(6),
+)
+
+CREATE TABLE tbl_orders (
+	id int PRIMARY KEY AUTO_INCREMENT,
+	customor_id int,
+	order_placed_date date
+)
+
+
+INSERT INTO tbl_customers VALUES
+ ('','Mamat001','Slamet001','slamet001@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat002','Slamet001','slamet002@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat003','Slamet001','slamet003@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat004','Slamet001','slamet004@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat005','Slamet001','slamet005@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat006','Slamet001','slamet006@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat007','Slamet001','slamet007@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat008','Slamet001','slamet008@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat009','Slamet001','slamet009@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat010','Slamet001','slamet000@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat011','Slamet001','slamet0q1@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat012','Slamet001','slamet011@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat013','Slamet001','slamet111@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat014','Slamet001','slamet001@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat015','Slamet001','slamet001@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat016','Slamet001','slamet001@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat017','Slamet001','slamet001@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat018','Slamet001','slamet001@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat019','Slamet001','slamet001@gmail.com','Cirebon','Indonesia','45122'),
+ ('','Mamat020','Slamet001','slamet001@gmail.com','Cirebon','Indonesia','45122')
+
+INSERT INTO tbl_orders VALUES
+ ('','1','2019/01/01'),
+ ('','2','2019/01/11'),
+ ('','3','2019/02/21'),
+ ('','4','2019/03/01'),
+ ('','5','2019/03/06'),
+ ('','6','2019/04/06'),
+ ('','7','2019/05/05'),
+ ('','8','2019/05/03'),
+ ('','9','2019/06/06'),
+ ('','10','2019/06/01'),
+ ('','11','2019/07/05'),
+ ('','12','2019/07/01'),
+ ('','13','2019/08/03'),
+ ('','14','2019/09/01'),
+ ('','15','2019/09/04'),
+ ('','16','2019/10/01'),
+ ('','17','2019/11/02'),
+ ('','18','2019/11/21'),
+ ('','19','2019/11/01'),
+ ('','20','2019/12/01'),
+
+8. SELECT tbl_customers.*, tbl_orders.* FROM tbl_customers 
+   INNER JOIN tbl_orders ON tb_orders.id=tb_customers.customer_id BY ORDER ASC
