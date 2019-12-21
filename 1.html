@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test HTML CSS</title>
+	<style type="text/css">
+		
+		.form {
+		width:80%;
+		margin: 5px;
+		}
+		
+		div {
+		margin: 50px 0px;
+		}
+		
+		#textbox input {
+		margin-top: 10px;
+		height: 25px;
+		width: 400px;
+		border:1px solid #999;	
+		border-radius: 2px;
+		padding:5px;
+		}
+		
+		#lahir input {
+		margin-top: 10px;
+		width: 250px;
+		height: 25px;
+		background-color: #fff;
+		border-radius: 2px;
+		padding:5px;
+		}
+		
+		#alamat textarea {
+		margin-top:10px;
+		width: 500px;
+		height: 75px;
+		border: 1px solid #999;
+		border-radius: 2px;
+		padding:5px;
+		}
+		
+		select {
+		margin-top: 10px;
+		height: 30px;
+		width: 250px;
+		background-color: #fff;
+		border-radius: 2px;
+		}
+		
+	</style>
+</head>
+<body>
+
+<form>
+
+<div class="form">
+	<div id="textbox">
+		<label>Nama Lengkap</label><br>
+		<input type="text" name="nama" required>
+	</div>
+	<div>
+		<label>Tempat Lahir</label><br>
+		<select name="tempatlahir">
+			<option></option>
+			<option value="Cirebon">Cirebon</option>
+			<option value="Indramayu">Indramayu</option>
+			<option value="Majalengka">Majalengka</option>
+		</select>
+	</div>
+	<div id="lahir">
+		<label>Tanggal Lahir</label><br>
+		<input type="date" name="tanggalahir">
+	</div>
+	<div id="textbox">
+		<label>No. Hp</label><br>
+		<input type="text" name="nohp">
+	</div>
+	<div id="alamat">
+		<label>Alamat</label><br>
+		<textarea name="alamat"></textarea>
+	</div>
+	<div>
+		<label>Pendidikan Akhir</label><br>
+		<select name="pendidikanakhir">
+			<option></option>
+			<option value="SMK">SMK</option>
+			<option value="SMP">SMP</option>
+			<option value="SD">SD</option>
+		</select>
+	</div>
+	<div id="RadioCheckbox">
+		<label>Agama</label><br>
+		<input type="radio" name="agama" value="Islam"><span style="background-color: cyan; border-radius: 10px; padding: 2px 5px">Islam</span><br>
+		<input type="radio" name="agama" value="Kristen"><span style="background-color: #1a53ff; border-radius: 10px; padding: 2px 5px">Kristen</span><br>
+		<input type="radio" name="agama" value="Katolik"><span style="background-color: #ff9966; border-radius: 10px; padding: 2px 5px">Katolik</span><br>
+	</div>
+	<div id="RadioCheckbox">
+		<label>Hobi</label><br>
+		<input type="checkbox" name="hobi" value="Renang"><span style="background-color: cyan; border-radius: 10px; padding: 2px 5px">Renang</span> <br>
+		<input type="checkbox" name="hobi" value="Mancing"><span style="background-color: #1a53ff; border-radius: 10px; padding: 2px 5px">Mancing</span><br>
+		<input type="checkbox" name="hobi" value="Game"><span style="background-color: #99ff66; border-radius: 10px; padding: 2px 5px">Game</span><br>
+		<input type="checkbox" name="hobi" value="Gibah"><span style="background-color: #ff66cc; border-radius: 10px; padding: 2px 5px">Gibah</span><br>
+		<input type="checkbox" name="hobi" value="Programming"><span style="background-color: #ff9966; border-radius: 10px; padding: 2px 5px">Programming</span><br>
+	</div>
+</div>
+
+<div></div>		
+
+</form>
+
+</body>
+</html>
